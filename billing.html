@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta name="apple-mobile-web-app-title" content="QubiqoHost">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#f5f7f7">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>QubiqoHost — Billing</title>
+<link rel="stylesheet" href="/css/style.css?v=20260905-lang-dropdown1">
+<script src="/js/i18n.js?v=1"></script>
+<style>
+.billing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.billing-card{padding:20px}
+.billing-card .credits{font-size:28px;font-weight:800;margin:8px 0}
+.billing-card .price{font-size:22px;font-weight:700}
+.billing-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.billing-balance{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}
+.billing-table{margin-top:16px}
+.billing-note{color:var(--muted);font-size:12px;line-height:1.5}
+@media(max-width:900px){.billing-grid{grid-template-columns:1fr}}
+</style>
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <span style="font-weight:700;font-size:18px;">QubiqoHost</span>
+
+    <div class="nav-item" onclick="location.href='/dashboard.html'">
+      Server
+    </div>
+
+    <div class="nav-item" onclick="location.href='/dashboard.html#files'">
+      Files
+    </div>
+
+    <div class="nav-item active">
+      Billing
+    </div>
+
+    <div class="nav-item" onclick="location.href='/dashboard.html#account'">
+      Account
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="user-chip">
+        <div class="avatar" id="avatarInit">--</div>
+        <div>
+          <div id="sideUsername" style="font-weight:600;">—</div>
+          <div style="color:var(--muted);font-size:11px;">Utente</div>
+        </div>
+      </div>
+
+      <button class="btn btn-ghost btn-block logout-btn" onclick="logout()">
+        Esci
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-header">
+      <div class="eyebrow">Billing</div>
+      <h1>Crediti e slot</h1>
+      <p>
+        Acquista crediti e utilizzali per aumentare gli slot disponibili sul tuo account.
+      </p>
+    </div>
+
+    <div class="card billing-card">
+      <div class="billing-balance">
+        <div>
+          <div class="label">Saldo crediti</div>
+          <div class="credits" id="balance">0</div>
+        </div>
+
+        <div>
+          <div class="label">Costo 1 slot</div>
+          <div class="price" id="slotCost">—</div>
+          <div class="billing-note">
+            Gli slot acquistati si sommano a quelli già assegnati.
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="buySlotBtn">
+          Acquista 1 slot
+        </button>
+      </div>
+    </div>
+
+    <div style="height:14px"></div>
+
+    <div class="card billing-card">
+      <div class="label">Hai un codice coupon?</div>
+      <div class="billing-actions" style="margin-top:8px">
+        <input id="couponInput" placeholder="Inserisci il codice" style="flex:1;min-width:200px;text-transform:uppercase">
+        <button class="btn btn-primary" id="redeemCouponBtn">Riscatta</button>
+      </div>
+    </div>
+
+    <div style="height:14px"></div>
+
+    <div class="page-header" style="margin-bottom:12px">
+      <h2>Acquista crediti</h2>
+      <p>
+        Sarai reindirizzato al checkout sicuro PayPal.
+      </p>
+    </div>
+
+    <div id="packages" class="billing-grid"></div>
+
+    <div id="billingStatus" class="card billing-card" style="margin-top:14px"></div>
+
+    <div class="page-header" style="margin-top:24px;margin-bottom:12px">
+      <h2>Movimenti</h2>
+    </div>
+
+    <div class="card table-wrap billing-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Operazione</th>
+            <th>Crediti</th>
+            <th>Importo</th>
+            <th>Stato</th>
+          </tr>
+        </thead>
+        <tbody id="transactions"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="/js/common.js?v=20260820-formatbytesfix2"></script>
+<script>
+initMobileNav();
+let billing = null;
+
+function euro(cents) {
+  return new Intl.NumberFormat('it-IT', {
+    style: 'currency',
+    currency: 'EUR'
+  }).format((cents || 0) / 100);
+}
+
+function date(ts) {
+  return new Date(ts).toLocaleString('it-IT');
+}
+
+async function loadBilling() {
+  const me = await requireAuth('user');
+
+  if (!me) return;
+
+  document.getElementById('sideUsername').textContent = me.username;
+  document.getElementById('avatarInit').textContent = initials(me.username);
+
+  billing = await api('/api/billing');
+
+  document.getElementById('balance').textContent = billing.credits;
+  document.getElementById('slotCost').textContent =
+    billing.slotCost + ' crediti';
+
+  const box = document.getElementById('packages');
+
+  box.innerHTML = billing.packages.map(p => `
+    <div class="card billing-card">
+      <div class="label">${escapeHtml(p.label)}</div>
+
+      <div class="credits">
+        ${p.credits}
+      </div>
+
+      <div class="billing-note">
+        crediti
+      </div>
+
+      <div class="price">
+        ${euro(p.amountCents)}
+      </div>
+
+      <div class="billing-actions">
+        <button
+          class="btn btn-primary btn-block"
+          onclick="buyCredits('${escapeHtml(p.id)}')"
+          ${billing.paypalConfigured ? '' : 'disabled'}
+        >
+          ${billing.paypalConfigured
+            ? 'Paga con PayPal'
+            : 'PayPal non configurato'}
+        </button>
+      </div>
+    </div>
+  `).join('');
+
+  if (!billing.paypalConfigured) {
+    document.getElementById('billingStatus').innerHTML = `
+      <b>Billing in attesa di configurazione.</b>
+
+      <div class="billing-note">
+        Imposta PAYPAL_CLIENT_ID,
+        PAYPAL_CLIENT_SECRET e PAYPAL_MODE
+        nel file .env del pannello per abilitare i pagamenti reali.
+      </div>
+    `;
+  } else {
+    document.getElementById('billingStatus').innerHTML = `
+      <b>Pagamenti tramite PayPal.</b>
+
+      <div class="billing-note">
+        Dopo il pagamento PayPal confermerà l'ordine
+        e i crediti verranno accreditati automaticamente.
+      </div>
+    `;
+  }
+
+  await loadTransactions();
+}
+
+async function buyCredits(id) {
+  try {
+    const r = await api('/api/billing/checkout', {
+      method: 'POST',
+      body: {
+        packageId: id
+      }
+    });
+
+    location.href = r.url;
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+document.getElementById('redeemCouponBtn').onclick = async () => {
+  const input = document.getElementById('couponInput');
+  const code = input.value.trim();
+
+  if (!code) {
+    toast('Inserisci un codice coupon', 'error');
+    return;
+  }
+
+  try {
+    const r = await api('/api/billing/redeem', {
+      method: 'POST',
+      body: { code }
+    });
+
+    toast(
+      r.type === 'slots'
+        ? `Riscattati ${r.amount} slot!`
+        : `Riscattati ${r.amount} crediti!`,
+      'success'
+    );
+
+    input.value = '';
+    await loadBilling();
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+};
+
+document.getElementById('buySlotBtn').onclick = async () => {
+  if (!billing) return;
+
+  if (
+    !confirm(
+      `Acquistare 1 slot per ${billing.slotCost} crediti?`
+    )
+  ) {
+    return;
+  }
+
+  try {
+    await api('/api/billing/buy-slot', {
+      method: 'POST',
+      body: {
+        quantity: 1
+      }
+    });
+
+    toast('Slot acquistato', 'success');
+
+    await loadBilling();
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+};
+
+async function loadTransactions() {
+  const { transactions } =
+    await api('/api/billing/transactions');
+
+  document.getElementById('transactions').innerHTML =
+    transactions.length
+      ? transactions.map(t => `
+          <tr>
+            <td>${date(t.createdAt)}</td>
+
+            <td>
+              ${escapeHtml(t.description || t.type)}
+            </td>
+
+            <td>
+              ${t.credits > 0 ? '+' : ''}${t.credits}
+            </td>
+
+            <td>
+              ${t.amountCents
+                ? euro(t.amountCents)
+                : '—'}
+            </td>
+
+            <td>
+              ${escapeHtml(t.status)}
+            </td>
+          </tr>
+        `).join('')
+      : `
+        <tr>
+          <td
+            colspan="5"
+            style="color:var(--muted)"
+          >
+            Nessun movimento
+          </td>
+        </tr>
+      `;
+}
+
+(async () => {
+  initMobileNav();
+
+  await loadBilling();
+
+  const p = new URLSearchParams(location.search);
+
+  if (p.get('payment') === 'success') {
+    try {
+      const r = await api('/api/billing/confirm', {
+        method: 'POST',
+        body: {
+          orderId:
+            p.get('token') ||
+            p.get('order_id')
+        }
+      });
+
+      if (r.paid) {
+        toast(
+          `Pagamento confermato: +${r.credited || 0} crediti`,
+          'success'
+        );
+      } else {
+        toast(
+          'Pagamento in verifica',
+          'default'
+        );
+      }
+
+      history.replaceState(
+        {},
+        '',
+        '/billing.html'
+      );
+
+      await loadBilling();
+    } catch (e) {
+      toast(e.message, 'error');
+    }
+  }
+})();
+</script>
+
+<footer class="site-footer">QubiqoHost - Managed by Variune Studios</footer>
+</body>
+</html>

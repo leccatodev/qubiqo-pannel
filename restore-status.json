@@ -1,0 +1,391 @@
+{
+  "state": "completed",
+  "startedAt": "2026-10-06T15:03:39.173Z",
+  "finishedAt": "2026-10-06T15:03:47.742Z",
+  "total": 42,
+  "completed": 42,
+  "online": 0,
+  "failed": 42,
+  "skippedNoNode": 0,
+  "current": null,
+  "results": [
+    {
+      "id": "4a867083-4977-4873-95e5-405e4b4ea39b",
+      "name": "SpaceMc",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/RBGam3r21/SpaceMc' && chmod 755 '/root/storage/RBGam3r21/SpaceMc'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST I",
+      "completedAt": "2026-10-06T15:03:39.697Z"
+    },
+    {
+      "id": "20bacccb-41a7-4934-8095-3071d11b2498",
+      "name": "Sicilia RP",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/FrosteddLore/Sicilia RP' && chmod 755 '/root/storage/FrosteddLore/Sicilia RP'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: R",
+      "completedAt": "2026-10-06T15:03:39.922Z"
+    },
+    {
+      "id": "0a365570-9ea9-4fa8-95d6-5b187b2ba956",
+      "name": "DragonMC Games",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/ghitechannel/DragonMC Games' && chmod 755 '/root/storage/ghitechannel/DragonMC Games'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:40.145Z"
+    },
+    {
+      "id": "d328d10f-bdd7-4c53-a9bb-8d1b195a6de9",
+      "name": "Qubiqo",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/QubiqoHost/Qubiqo' && chmod 755 '/root/storage/QubiqoHost/Qubiqo'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST I",
+      "completedAt": "2026-10-06T15:03:40.376Z"
+    },
+    {
+      "id": "ded1c853-fc69-4939-893d-f375c5802d51",
+      "name": "QubiqoNamer",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/QubiqoHost/QubiqoNamer' && chmod 755 '/root/storage/QubiqoHost/QubiqoNamer'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REM",
+      "completedAt": "2026-10-06T15:03:40.610Z"
+    },
+    {
+      "id": "7301d358-0d22-434e-8d2a-8d28a7bec5bf",
+      "name": "QubiqoTicket",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/QubiqoHost/QubiqoTicket' && chmod 755 '/root/storage/QubiqoHost/QubiqoTicket'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: R",
+      "completedAt": "2026-10-06T15:03:40.856Z"
+    },
+    {
+      "id": "613c16a1-2797-4d27-af2d-dec258b1c4d5",
+      "name": ".Santos",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Noctis/.Santos' && chmod 755 '/root/storage/Noctis/.Santos'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIF",
+      "completedAt": "2026-10-06T15:03:41.081Z"
+    },
+    {
+      "id": "870a44ad-8b7a-480e-8f39-e28022bc0b24",
+      "name": "Discord bot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/PaoloMinecraft2/Discord bot' && chmod 755 '/root/storage/PaoloMinecraft2/Discord bot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:41.298Z"
+    },
+    {
+      "id": "bc4fa00c-b27b-4031-927a-721435de72c7",
+      "name": "SolixMC",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/simonesperanza/SolixMC' && chmod 755 '/root/storage/simonesperanza/SolixMC'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REM",
+      "completedAt": "2026-10-06T15:03:41.523Z"
+    },
+    {
+      "id": "6424c0cc-2cef-477e-8448-8e85825b7f43",
+      "name": "Nexus Support",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Noctis/Nexus Support' && chmod 755 '/root/storage/Noctis/Nexus Support'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE ",
+      "completedAt": "2026-10-06T15:03:41.710Z"
+    },
+    {
+      "id": "f1133f1b-b1ed-44c6-87c4-29a414f35428",
+      "name": "HeroMC",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Timmy/HeroMC' && chmod 755 '/root/storage/Timmy/HeroMC'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICAT",
+      "completedAt": "2026-10-06T15:03:41.983Z"
+    },
+    {
+      "id": "1cf17912-40a2-481e-8329-0264c69f0c86",
+      "name": "BiBi Bot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Noctis/BiBi Bot' && chmod 755 '/root/storage/Noctis/BiBi Bot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENT",
+      "completedAt": "2026-10-06T15:03:42.248Z"
+    },
+    {
+      "id": "75b9b7e3-ce04-4179-b711-cb3f8c0797a0",
+      "name": "M4R4NGI's ticketbot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/M4R4NG1/M4R4NGI_s ticketbot' && chmod 755 '/root/storage/M4R4NG1/M4R4NGI_s ticketbot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:42.494Z"
+    },
+    {
+      "id": "e21bb6a0-478f-4f69-94e5-5c98b5ca0af0",
+      "name": "Apocaliss Staff",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/muccaio/Apocaliss Staff' && chmod 755 '/root/storage/muccaio/Apocaliss Staff'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: R",
+      "completedAt": "2026-10-06T15:03:42.781Z"
+    },
+    {
+      "id": "3bacdce6-cbb6-44b2-b5e8-d8f015f4352a",
+      "name": "AzzuKatty",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/AmirGameCraftNewDawnStud/AzzuKatty' && chmod 755 '/root/storage/AmirGameCraftNewDawnStud/AzzuKatty'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:43.044Z"
+    },
+    {
+      "id": "98189c56-33cb-4d23-9b08-ba52b361c124",
+      "name": "MONZA ERLC|MODERATION#2081",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Giulio/MONZA ERLC_MODERATION_2081' && chmod 755 '/root/storage/Giulio/MONZA ERLC_MODERATION_2081'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:43.237Z"
+    },
+    {
+      "id": "933e2d0c-593d-4f7e-92c6-72a0c72f8bc3",
+      "name": "acqua ticket",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/simonesperanza/acqua ticket' && chmod 755 '/root/storage/simonesperanza/acqua ticket'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:43.439Z"
+    },
+    {
+      "id": "f9916819-e34b-49d3-9431-7878c011dc8c",
+      "name": "AcquaAi",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/simonesperanza/AcquaAi' && chmod 755 '/root/storage/simonesperanza/AcquaAi'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REM",
+      "completedAt": "2026-10-06T15:03:43.678Z"
+    },
+    {
+      "id": "5ec14dc4-e789-4755-a8d9-9db0df9fc964",
+      "name": "NitroLounge",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/PaoloMinecraft2/NitroLounge' && chmod 755 '/root/storage/PaoloMinecraft2/NitroLounge'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:43.886Z"
+    },
+    {
+      "id": "9935836e-dd67-44c1-882c-759ec60c545d",
+      "name": "AcquaBuilder",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/simonesperanza/AcquaBuilder' && chmod 755 '/root/storage/simonesperanza/AcquaBuilder'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:44.139Z"
+    },
+    {
+      "id": "053c55b4-7c9f-4050-a5e7-58a04b0e8b31",
+      "name": "Gestione CP",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Nellogeimer/Gestione CP' && chmod 755 '/root/storage/Nellogeimer/Gestione CP'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: R",
+      "completedAt": "2026-10-06T15:03:44.334Z"
+    },
+    {
+      "id": "d85b56b4-104a-4608-8f8e-6117e4d78eba",
+      "name": "Mike's Twins",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/M4R4NG1/Mike_s Twins' && chmod 755 '/root/storage/M4R4NG1/Mike_s Twins'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE ",
+      "completedAt": "2026-10-06T15:03:44.517Z"
+    },
+    {
+      "id": "ef0e5132-d002-46eb-9039-d1168f6b7c03",
+      "name": "GESTIONE RIP",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Nellogeimer/GESTIONE RIP' && chmod 755 '/root/storage/Nellogeimer/GESTIONE RIP'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING:",
+      "completedAt": "2026-10-06T15:03:44.700Z"
+    },
+    {
+      "id": "b27911bb-d9cf-4642-a1e9-cb1fc3dfdc0d",
+      "name": "Loryxx's Bot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/ImLoryxx_/Loryxx_s Bot' && chmod 755 '/root/storage/ImLoryxx_/Loryxx_s Bot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REM",
+      "completedAt": "2026-10-06T15:03:44.863Z"
+    },
+    {
+      "id": "11201a3a-fe56-467d-9c44-3e0ea81eebf9",
+      "name": "Sanzioni CP",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Nellogeimer/Sanzioni CP' && chmod 755 '/root/storage/Nellogeimer/Sanzioni CP'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: R",
+      "completedAt": "2026-10-06T15:03:45.024Z"
+    },
+    {
+      "id": "ed82beb4-1ea0-4245-a53d-1c10041e2356",
+      "name": "AstraMC Network",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Timmy/AstraMC Network' && chmod 755 '/root/storage/Timmy/AstraMC Network'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOT",
+      "completedAt": "2026-10-06T15:03:45.182Z"
+    },
+    {
+      "id": "5d9f8a41-f4d4-4b72-849f-974683f7d6a6",
+      "name": "🚀Space MC",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Timmy/__Space MC' && chmod 755 '/root/storage/Timmy/__Space MC'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDE",
+      "completedAt": "2026-10-06T15:03:45.342Z"
+    },
+    {
+      "id": "4b35d5b1-27a7-4ac3-8c01-f864fdda613a",
+      "name": "POTENZA",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/LorenzoFelici/POTENZA' && chmod 755 '/root/storage/LorenzoFelici/POTENZA'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOT",
+      "completedAt": "2026-10-06T15:03:45.505Z"
+    },
+    {
+      "id": "7352a802-5e77-4cd6-8b49-d6d980230d7b",
+      "name": "Pisa rp",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Melone/Pisa rp' && chmod 755 '/root/storage/Melone/Pisa rp'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIF",
+      "completedAt": "2026-10-06T15:03:45.663Z"
+    },
+    {
+      "id": "2949c2a5-7a60-40cc-b9f4-1f02442192c8",
+      "name": "Italianovero Ticket Bot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Macchina/Italianovero Ticket Bot' && chmod 755 '/root/storage/Macchina/Italianovero Ticket Bot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:45.822Z"
+    },
+    {
+      "id": "059d5ffa-95c0-4e53-9a74-7f9591226096",
+      "name": "gang vc",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/user_/gang vc' && chmod 755 '/root/storage/user_/gang vc'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFIC",
+      "completedAt": "2026-10-06T15:03:45.979Z"
+    },
+    {
+      "id": "4ae80797-49b8-451d-b06b-f47efed86bc0",
+      "name": "Laranja Bot-1",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/xeno/Laranja Bot-1' && chmod 755 '/root/storage/xeno/Laranja Bot-1'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST",
+      "completedAt": "2026-10-06T15:03:46.145Z"
+    },
+    {
+      "id": "a8a59458-2d45-4582-a65b-53facc2e8c17",
+      "name": "Bot GDF",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Jos/Bot GDF' && chmod 755 '/root/storage/Jos/Bot GDF'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATIO",
+      "completedAt": "2026-10-06T15:03:46.301Z"
+    },
+    {
+      "id": "33fa6997-e7a4-4a09-bc55-be0b07b93a4e",
+      "name": "assistenza tvrp",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/GabrielZanellato/assistenza tvrp' && chmod 755 '/root/storage/GabrielZanellato/assistenza tvrp'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:46.461Z"
+    },
+    {
+      "id": "2aefa7aa-6e74-4ecc-b9bf-b8e261fb12d3",
+      "name": "BIT",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/ManuBruno/BIT' && chmod 755 '/root/storage/ManuBruno/BIT'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFIC",
+      "completedAt": "2026-10-06T15:03:46.622Z"
+    },
+    {
+      "id": "8b755405-8009-45eb-a1d2-e1f4eaa18101",
+      "name": "CPRP",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/circondatoh/CPRP' && chmod 755 '/root/storage/circondatoh/CPRP'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDE",
+      "completedAt": "2026-10-06T15:03:46.792Z"
+    },
+    {
+      "id": "ca4056bd-1a8e-4d86-a209-fd96eb501a0a",
+      "name": "TwilightClub",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/AmirGameCraftNewDawnStud/TwilightClub' && chmod 755 '/root/storage/AmirGameCraftNewDawnStud/TwilightClub'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:46.951Z"
+    },
+    {
+      "id": "9d0e52ba-a5a0-4894-818c-bf406e622ae1",
+      "name": "SERVER FLAVIOOO",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Nellogeimer/SERVER FLAVIOOO (9d0e52ba)' && chmod 755 '/root/storage/Nellogeimer/SERVER FLAVIOOO (9d0e52ba)'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:47.113Z"
+    },
+    {
+      "id": "3ba3b05b-5dbc-4255-bfea-1ce6a1a61e5e",
+      "name": "𝐀𝐒𝐓𝐑𝐘𝐗𝐌𝐂 🚀",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/NotZanna/________________ __' && chmod 755 '/root/storage/NotZanna/________________ __'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    ",
+      "completedAt": "2026-10-06T15:03:47.269Z"
+    },
+    {
+      "id": "a4d91ffb-a79f-4acc-9023-8b834b0b319a",
+      "name": "Vespucci Roleplay BOT",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/s4mu./Vespucci Roleplay BOT' && chmod 755 '/root/storage/s4mu./Vespucci Roleplay BOT'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WA",
+      "completedAt": "2026-10-06T15:03:47.424Z"
+    },
+    {
+      "id": "de16bf4e-1b03-4d71-a278-abfefcd55235",
+      "name": "SERVER FLAVIOOO",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/Nellogeimer/SERVER FLAVIOOO (de16bf4e)' && chmod 755 '/root/storage/Nellogeimer/SERVER FLAVIOOO (de16bf4e)'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+      "completedAt": "2026-10-06T15:03:47.582Z"
+    },
+    {
+      "id": "346c151c-0c0a-4c3e-8364-2514bb84438e",
+      "name": "DWR bot",
+      "nodeId": "9f53594e-11ff-4f5e-8292-5d8f5e27d851",
+      "ok": false,
+      "online": false,
+      "error": "Command failed: ssh -o BatchMode=yes -o ConnectTimeout=10 -o ConnectionAttempts=1 -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=4 -o ServerAliveCountMax=2 -o ControlMaster=auto -o ControlPersist=120 -o ControlPath=/tmp/qbq-ssh-ctrl/02016320c308297e5479.sock -p 22 -i /root/.ssh/qubiqohost-node root@10.77.0.1 mkdir -p '/root/storage/M4R4NG1/DWR bot' && chmod 755 '/root/storage/M4R4NG1/DWR bot'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENT",
+      "completedAt": "2026-10-06T15:03:47.742Z"
+    }
+  ]
+}

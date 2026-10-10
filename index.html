@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f7f7">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="QubiqoHost">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+  <title data-i18n="index.title">QubiqoHost — Accedi</title>
+  <link rel="stylesheet" href="/css/style.css?v=20260905-lang-dropdown1">
+  <script src="/js/i18n.js?v=1"></script>
+</head>
+<body class="auth-page">
+  <div class="auth-shell">
+    <section class="auth-showcase" aria-labelledby="showcaseTitle">
+      <div class="auth-brand">
+        <span class="auth-brand-mark">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 7.5 16 3l9 4.5v10L16 22l-9-4.5v-10Z"/><path d="m7 17.5 9 4.5 9-4.5M16 12v10"/><path d="m10 22 6 3 6-3"/></svg>
+        </span>
+        <span class="auth-brand-copy">Qubiqo<span>Host</span></span>
+      </div>
+
+      <div class="auth-showcase-copy">
+        <span class="auth-overline"><i></i><span data-i18n="index.overline">Hosting control center</span></span>
+        <h1 id="showcaseTitle"><span data-i18n="index.heroTitle1">Ogni server.</span><br><em data-i18n="index.heroTitle2">Sotto controllo.</em></h1>
+        <p data-i18n="index.heroDesc">Un pannello operativo progettato per gestire bot, risorse e deployment con chiarezza, velocità e sicurezza.</p>
+      </div>
+
+      <div class="auth-feature-grid">
+        <article>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h7M11 17.5h7"/></svg>
+          <div><strong data-i18n="index.feature1Title">Gestione centralizzata</strong><span data-i18n="index.feature1Desc">Tutto il tuo stack in un'unica dashboard.</span></div>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.5-7 5 14 2.5-7h4"/></svg>
+          <div><strong data-i18n="index.feature2Title">Monitoraggio live</strong><span data-i18n="index.feature2Desc">Risorse e stato sempre visibili.</span></div>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><strong data-i18n="index.feature3Title">Accesso protetto</strong><span data-i18n="index.feature3Desc">Autenticazione sicura e affidabile.</span></div>
+        </article>
+      </div>
+
+      <div class="auth-showcase-foot"><span><i></i><span data-i18n="index.footAllSystems">Tutti i sistemi operativi</span></span><small data-i18n="index.footPlatform">QubiqoHost / Control platform</small></div>
+    </section>
+
+    <main class="auth-main">
+      <div class="auth-mobile-brand">
+        <span class="auth-brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 7.5 16 3l9 4.5v10L16 22l-9-4.5v-10Z"/><path d="m7 17.5 9 4.5 9-4.5M16 12v10"/><path d="m10 22 6 3 6-3"/></svg></span>
+        <span class="auth-brand-copy">Qubiqo<span>Host</span></span>
+      </div>
+
+      <div class="auth-card" id="authBox">
+        <div class="auth-heading">
+          <span class="auth-step" data-i18n="index.step">Area cliente</span>
+          <h2 data-i18n="index.loginHeading">Accedi al tuo workspace</h2>
+          <p data-i18n="index.loginDesc">Inserisci le tue credenziali o usa uno dei provider disponibili.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Accesso o registrazione">
+          <button type="button" class="auth-tab active" id="tabLogin" role="tab" aria-selected="true" data-i18n="index.tabLogin">Accedi</button>
+          <button type="button" class="auth-tab" id="tabRegister" role="tab" aria-selected="false" data-i18n="index.tabRegister">Registrati</button>
+        </div>
+
+        <div id="oauthArea" class="oauth-buttons">
+          <a class="oauth-login discord-login" href="/auth/discord" id="discordLogin">
+            <svg class="oauth-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M19.54 5.32A16.4 16.4 0 0 0 15.8 4.16l-.46.94a15.2 15.2 0 0 0-6.68 0l-.46-.94a16.4 16.4 0 0 0-3.74 1.16C2.09 8.82 1.45 12.2 1.77 15.54a16.7 16.7 0 0 0 4.6 2.32l1.11-1.51c-.61-.23-1.2-.51-1.76-.83l.43-.33c3.4 1.57 7.31 1.57 10.71 0l.43.33c-.56.32-1.15.6-1.76.83l1.11 1.51a16.7 16.7 0 0 0 4.6-2.32c.37-3.88-.63-7.23-1.7-10.22ZM8.5 14.17c-1.02 0-1.86-.94-1.86-2.09s.82-2.09 1.86-2.09 1.87.94 1.86 2.09c0 1.15-.82 2.09-1.86 2.09Zm7 0c-1.02 0-1.86-.94-1.86-2.09s.82-2.09 1.86-2.09 1.87.94 1.86 2.09c0 1.15-.82 2.09-1.86 2.09Z"/></svg>
+            <span data-i18n="index.discordLogin">Continua con Discord</span>
+          </a>
+          <a class="oauth-login google-login" href="/auth/google" id="googleLogin">
+            <svg class="oauth-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" stroke="none" d="M21.35 12.23c0-.78-.07-1.53-.2-2.23H12v4.22h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.15c1.85-1.7 2.9-4.2 2.9-7.38Z"/><path fill="#34A853" stroke="none" d="M12 21.75c2.64 0 4.85-.87 6.46-2.34l-3.15-2.45c-.87.58-1.98.92-3.31.92-2.55 0-4.71-1.72-5.49-4.03H3.25v2.53A9.76 9.76 0 0 0 12 21.75Z"/><path fill="#FBBC05" stroke="none" d="M6.51 13.85A5.86 5.86 0 0 1 6.2 12c0-.64.11-1.26.31-1.85V7.62H3.25A9.75 9.75 0 0 0 2.25 12c0 1.57.38 3.05 1 4.38l3.26-2.53Z"/><path fill="#EA4335" stroke="none" d="M12 6.12c1.44 0 2.73.5 3.75 1.49l2.81-2.81C16.85 3.27 14.64 2.25 12 2.25a9.76 9.76 0 0 0-8.75 5.37l3.26 2.53c.78-2.31 2.94-4.03 5.49-4.03Z"/></svg>
+            <span data-i18n="index.googleLogin">Continua con Google</span>
+          </a>
+        </div>
+
+        <div class="oauth-divider"><span data-i18n="index.orDivider">oppure usa le credenziali</span></div>
+
+        <form id="loginForm" class="auth-form">
+          <label for="loginUsername" data-i18n="index.username">Username</label>
+          <div class="auth-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg><input type="text" id="loginUsername" placeholder="Il tuo username" data-i18n-placeholder="index.usernamePlaceholder" autocomplete="username" required></div>
+          <label for="loginPassword" data-i18n="index.password">Password</label>
+          <div class="auth-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input type="password" id="loginPassword" placeholder="La tua password" data-i18n-placeholder="index.passwordPlaceholder" autocomplete="current-password" required></div>
+          <a href="/forgot-password" style="display:block;margin:10px 0 4px;text-align:right;color:#28a9e0;text-decoration:none;font-size:14px;font-weight:700;">Password dimenticata?</a>
+          <button type="submit" class="btn auth-submit"><span data-i18n="index.loginSubmit">Accedi al pannello</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button>
+        </form>
+
+        <form id="registerForm" class="auth-form hidden">
+          <label for="regUsername" data-i18n="index.username">Username</label>
+          <div class="auth-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg><input type="text" id="regUsername" placeholder="Scegli uno username" data-i18n-placeholder="index.regUsernamePlaceholder" autocomplete="username" required></div>
+          <label for="regEmail" data-i18n="index.email">Email</label>
+          <div class="auth-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><input type="email" id="regEmail" placeholder="nome@esempio.it" data-i18n-placeholder="index.emailPlaceholder" autocomplete="email" required></div>
+          <label for="regPassword" data-i18n="index.password">Password</label>
+          <div class="auth-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input type="password" id="regPassword" placeholder="Crea una password sicura" data-i18n-placeholder="index.regPasswordPlaceholder" autocomplete="new-password" required></div>
+          <a href="/forgot-password" style="display:block;margin:10px 0 4px;text-align:right;color:#28a9e0;text-decoration:none;font-size:14px;font-weight:700;">Password dimenticata?</a>
+          <button type="submit" class="btn auth-submit"><span data-i18n="index.registerSubmit">Crea account</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button>
+        </form>
+
+        <p class="auth-legal" data-i18n="index.legal">Accedendo accetti i termini di servizio e l'informativa sulla privacy di QubiqoHost.</p>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast-wrap" id="toasts"></div>
+  <script src="/js/common.js?v=20260824-device-risk"></script>
+  <script>
+    const tabLogin = document.getElementById('tabLogin');
+    const tabRegister = document.getElementById('tabRegister');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+
+    function showForm(which) {
+      const isLogin = which === 'login';
+      loginForm.classList.toggle('hidden', !isLogin);
+      registerForm.classList.toggle('hidden', isLogin);
+      tabLogin.classList.toggle('active', isLogin);
+      tabRegister.classList.toggle('active', !isLogin);
+      tabLogin.setAttribute('aria-selected', String(isLogin));
+      tabRegister.setAttribute('aria-selected', String(!isLogin));
+      document.querySelector('.auth-heading h2').textContent = t(isLogin ? 'index.loginHeading' : 'index.registerHeading');
+      document.querySelector('.auth-heading p').textContent = t(isLogin ? 'index.loginDesc' : 'index.registerDesc');
+    }
+
+    tabLogin.onclick = () => showForm('login');
+    tabRegister.onclick = () => showForm('register');
+
+    loginForm.onsubmit = async (event) => {
+      event.preventDefault();
+      try {
+        const { user } = await api('/api/login', { method: 'POST', body: { username: document.getElementById('loginUsername').value, password: document.getElementById('loginPassword').value } });
+        window.location.href = user.role === 'admin' ? '/admin.html' : '/dashboard.html';
+      } catch (error) { toast(error.message, 'error'); }
+    };
+
+    registerForm.onsubmit = async (event) => {
+      event.preventDefault();
+      try {
+        const registration = await api('/api/register', { method: 'POST', body: { username: document.getElementById('regUsername').value, email: document.getElementById('regEmail').value, password: document.getElementById('regPassword').value } });
+        const username = document.getElementById('regUsername').value;
+        toast(registration.message || t('index.toast.accountCreated'), registration.emailSent === false ? 'error' : 'success');
+        document.getElementById('loginUsername').value = username;
+        loginForm.reset();
+        registerForm.reset();
+        document.getElementById('loginUsername').value = username;
+        showForm('login');
+      } catch (error) { toast(error.message, 'error'); }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('discord') === 'cancelled') { toast(t('index.toast.discordCancelled'), 'error'); history.replaceState({}, '', '/'); }
+    if (params.get('google') === 'cancelled') { toast(t('index.toast.googleCancelled'), 'error'); history.replaceState({}, '', '/'); }
+    api('/api/me').then(({ user }) => { window.location.href = user.role === 'admin' ? '/admin.html' : '/dashboard.html'; }).catch(() => {});
+  </script>
+<footer class="site-footer">QubiqoHost - Managed by Variune Studios</footer>
+</body>
+</html>

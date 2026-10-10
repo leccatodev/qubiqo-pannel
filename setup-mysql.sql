@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS qubiqohost CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS 'qubiqohost'@'localhost' IDENTIFIED BY 'LA_TUA_PASSWORD_FORTE';
+GRANT ALL PRIVILEGES ON qubiqohost.* TO 'qubiqohost'@'localhost';
+FLUSH PRIVILEGES;

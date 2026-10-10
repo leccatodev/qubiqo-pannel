@@ -1,0 +1,39 @@
+nohup: ignoring input
+QubiqoHost in ascolto su http://localhost:3000
+[QubiqoHost] Ripristino bot avviato in background (worker PID 1447771).
+[QubiqoHost] Migrazione storage avviata in background (worker PID 1447783).
+[QubiqoHost] Monitoraggio runtime avviato in background (worker PID 1447784).
+[QubiqoHost] Ripristino: 0/2 completati, 0 online, 0 falliti — Ferie rip
+[QubiqoHost] Ripristino: 1/2 completati, 1 online, 0 falliti — QubiqoNamer
+[QubiqoHost] ✓ Ripristino completato: 2/2 bot online, 0 non avviati.
+[QubiqoHost] Ricevuto SIGTERM: arresto dei bot in corso...
+[QubiqoHost] ✓ Bot arrestato: Jenny
+[QubiqoHost] ✓ Bot arrestato: SpaceMc
+[QubiqoHost] ✓ Bot arrestato: Sicilia RP
+[QubiqoHost] ✓ Bot arrestato: DsLivornoPartner
+[QubiqoHost] ✓ Bot arrestato: GitHub Client
+[QubiqoHost] ✓ Bot arrestato: <Blushy>
+[QubiqoHost] ✓ Bot arrestato: Mercury Moderation
+[QubiqoHost] ✓ Bot arrestato: Ticket
+[QubiqoHost] ✓ Bot arrestato: test
+[QubiqoHost] ✓ Bot arrestato: LumixShop
+[QubiqoHost] ✓ Bot arrestato: Ferie rip
+[QubiqoHost] ✓ Bot arrestato: Space Mc
+[QubiqoHost] ✓ Bot arrestato: DragonMC Games
+[QubiqoHost] ✓ Bot arrestato: sacra corona unita
+[QubiqoHost] ✓ Bot arrestato: Siena moderazione in game
+[QubiqoHost] ✓ Bot arrestato: Qubiqo
+[QubiqoHost] ✓ Bot arrestato: QubiqoNamer
+[QubiqoHost] ✓ Bot arrestato: dsadas
+[QubiqoHost] ✓ Bot arrestato: Croce Rossa Italiana
+[QubiqoHost] ✓ Bot arrestato: GhiteMC Bot
+[QubiqoHost] ✓ Bot arrestato: Supporto ShinyMC
+[QubiqoHost] ✓ Bot arrestato: Candidatura ShinyMC
+[QubiqoHost] ✓ Bot arrestato: QubiqoTicket
+[QubiqoHost] ✗ Impossibile arrestare Elegance Bot: File di avvio non trovato
+[QubiqoHost] ✓ Bot arrestato: crazy
+[QubiqoHost] ✓ Bot arrestato: Astral Community
+[QubiqoHost] ✓ Bot arrestato: noctiss
+[QubiqoHost] ✓ Bot arrestato: Croce Rossa Italiana
+[QubiqoHost] ✓ Bot arrestato: AtlantisMC | Bot
+[QubiqoHost] Tutti i bot sono stati arrestati. Arresto del pannello...

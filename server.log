@@ -1,0 +1,6 @@
+nohup: ignoring input
+QubiqoHost in ascolto su http://localhost:3000
+[QubiqoHost] Ripristino bot avviato in background (worker PID 1152216).
+[QubiqoHost] Migrazione storage avviata in background (worker PID 1152230).
+[QubiqoHost] Monitoraggio runtime avviato in background (worker PID 1152231).
+[QubiqoHost] ✓ Ripristino completato: 0/0 bot online, 0 non avviati.
